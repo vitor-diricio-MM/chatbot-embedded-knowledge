@@ -1,0 +1,7 @@
+The project intends to use chatGPT together with a specific knowledge base that is coupled to chatGPT.
+
+To this end:
+
+1. A CSV document is created which will act as a knowledge base
+
+2. Based on this CSV file, when a question is asked, the part of the knowledge base that comes closest to answering that question is found through vectorization and coupled to the prompt (so that chatGPT has this knowledge, if it is in the knowledge base).
