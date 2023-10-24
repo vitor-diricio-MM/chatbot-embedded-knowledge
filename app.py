@@ -5,9 +5,11 @@ from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 from dotenv import load_dotenv
+import openai
 import streamlit as st
 
 load_dotenv()
+openai.api_key = st.secrets['OPENAI_API_KEY']
 
 # 1. Vectorise the sales response csv data
 loader = CSVLoader(file_path="knowledge_base.csv")
